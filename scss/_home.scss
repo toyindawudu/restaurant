@@ -3,7 +3,7 @@
 #welcome {
   display: grid;
   grid-template-columns: 350px 1fr ;
-  // width: 100%;
+  width: 100%;
   height: 100vh;
 
 
@@ -80,7 +80,23 @@
   }
 
   .location {
+    align-self: flex-end;
     margin: 0 0 0 30px;
+    position: absolute;
+    bottom: 100px;
+
+    .address {
+      color: #c2c8cc;
+    }
+    .phone-number {
+      a{
+        color: pink;
+        font-size: 1.6rem;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+
   }
   .welcome-jumbo {
     background: red;
