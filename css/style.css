@@ -1,4 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #welcome {
   display: -ms-grid;
   display: grid;
@@ -35,7 +41,7 @@
 
 #welcome .menu .menu-title {
   text-transform: uppercase;
-  color: green;
+  color: #ef7e66;
   font-weight: 700;
   font-size: 1.2rem;
   border-bottom: solid 2px grey;
@@ -57,7 +63,7 @@
 }
 
 #welcome .menu .links li a:hover {
-  background: red;
+  background: #fecd55;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   width: 100px;
@@ -90,6 +96,12 @@
   margin-right: 10px;
 }
 
+#welcome .social-icons a:hover {
+  background: #fecd55;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
 #welcome .location {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -103,13 +115,73 @@
 }
 
 #welcome .location .phone-number a {
-  color: pink;
+  color:   #73b464;
   font-size: 1.6rem;
   text-decoration: none;
   font-weight: 700;
 }
 
 #welcome .welcome-jumbo {
-  background: red;
+  max-width: calc(100vw - 350px);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fecd55;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fecd55), color-stop(47%, #fcd780), color-stop(53%, #fcd780), to(#fecd55));
+  background: linear-gradient(to right, #fecd55 0%, #fcd780 47%, #fcd780 53%, #fecd55 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 100px;
+  position: relative;
 }
+
+#welcome .welcome-jumbo .status {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: absolute;
+  top: 300px;
+  z-index: 100;
+}
+
+#welcome .welcome-jumbo h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 0px;
+  position: absolute;
+  top: 350px;
+}
+
+#welcome .welcome-jumbo .flying-burger {
+  margin-top: 0px;
+  max-height: 700px;
+  z-index: 1;
+}
+
+@-webkit-keyframes identifier {}
+
+@keyframes identifier {}
 /*# sourceMappingURL=style.css.map */

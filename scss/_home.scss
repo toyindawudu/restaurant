@@ -28,7 +28,7 @@
     margin-bottom: 50px;
     .menu-title {
       text-transform: uppercase;
-      color: green;
+      color: #ef7e66;
       font-weight: 700;
       font-size: 1.2rem;
       border-bottom: solid 2px grey;
@@ -49,7 +49,7 @@
           display: block;
 
             &:hover{
-              background: red;
+              background:#fecd55;
               transition: all 0.1s ease-in-out;
               width: 100px;
             }
@@ -76,6 +76,12 @@
       width: 40px;
       border-radius: 50%;
       margin-right: 10px;
+
+      &:hover{
+        background:#fecd55;
+        transition: all 0.1s ease-in-out;
+        //width: 100px;
+      }
     }
   }
 
@@ -90,7 +96,7 @@
     }
     .phone-number {
       a{
-        color: pink;
+        color: #73b464;
         font-size: 1.6rem;
         text-decoration: none;
         font-weight: 700;
@@ -99,7 +105,53 @@
 
   }
   .welcome-jumbo {
-    background: red;
+    max-width: calc(100vw - 350px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fecd55; /* Old browsers */
+    background: -moz-linear-gradient(left, #fecd55 0%, #fcd780 47%, #fcd780 53%, #fecd55 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fecd55 0%,#fcd780 47%,#fcd780 53%,#fecd55 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fecd55 0%,#fcd780 47%,#fcd780 53%,#fecd55 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding:100px;
+    position: relative;
 
+    .status {
+      display: inline-block;
+      padding: 10px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+      background: black;
+      border-radius: 5px;
+      align-self: flex-start;
+      position: absolute;
+      top: 300px;
+      z-index: 100;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: 700;
+      align-self: flex-start;
+      margin-top: 0px;
+      position: absolute;
+      top: 350px;
+    }
+
+    .flying-burger {
+      margin-top: 0px;
+      max-height: 700px;
+      z-index: 1;
+    }
+
+    @keyframes identifier {
+      
+    }
   }
+
 }
