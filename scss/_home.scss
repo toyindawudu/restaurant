@@ -28,7 +28,7 @@
     margin-bottom: 50px;
     .menu-title {
       text-transform: uppercase;
-      color: #ef7e66;
+      color: #000000;
       font-weight: 700;
       font-size: 1.2rem;
       border-bottom: solid 2px grey;
@@ -92,11 +92,12 @@
     bottom: 100px;
 
     .address {
-      color: #c2c8cc;
+      color: #000000;
+      font-weight: 600;
     }
     .phone-number {
       a{
-        color: #73b464;
+        color: #fecd55;
         font-size: 1.6rem;
         text-decoration: none;
         font-weight: 700;
@@ -147,11 +148,23 @@
       margin-top: 0px;
       max-height: 700px;
       z-index: 1;
-    }
-
-    @keyframes identifier {
-      
+      animation: moveUpandDown 5s linear infinite;
     }
   }
+}
 
+#information {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .information-image{
+    img {
+      max-height: 400px;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  
+  h2 {
+    font-size: 10rem;
+  }
+  }
 }

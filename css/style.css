@@ -41,7 +41,7 @@
 
 #welcome .menu .menu-title {
   text-transform: uppercase;
-  color: #ef7e66;
+  color: #000000;
   font-weight: 700;
   font-size: 1.2rem;
   border-bottom: solid 2px grey;
@@ -111,11 +111,12 @@
 }
 
 #welcome .location .address {
-  color: #c2c8cc;
+  color: #000000;
+  font-weight: 600;
 }
 
 #welcome .location .phone-number a {
-  color:   #73b464;
+  color:   #fecd55;
   font-size: 1.6rem;
   text-decoration: none;
   font-weight: 700;
@@ -179,9 +180,26 @@
   margin-top: 0px;
   max-height: 700px;
   z-index: 1;
+  -webkit-animation: moveUpandDown 5s linear infinite;
+          animation: moveUpandDown 5s linear infinite;
 }
 
-@-webkit-keyframes identifier {}
+#information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
 
-@keyframes identifier {}
+#information .information-image img {
+  max-height: 400px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#information .information-image h2 {
+  font-size: 10rem;
+}
 /*# sourceMappingURL=style.css.map */
