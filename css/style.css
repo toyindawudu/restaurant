@@ -3,6 +3,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-style: roboto;
 }
 
 #welcome {
@@ -189,17 +190,103 @@
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
 }
 
 #information .information-image img {
-  max-height: 400px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
-#information .information-image h2 {
-  font-size: 10rem;
+#information .information-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 100px 50px;
+}
+
+#information .information-info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#information .information-info .information-paragraphs {
+  font-size: 1.4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+#information .information-info .information-about-link {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+#information .information-info .information-about-link span {
+  margin-right: 5px;
+  font-size: 1.6;
+  font-weight: 700;
+}
+
+#information .information-info .information-about-link span:hover {
+  background: #fecd55;
+  text-decoration: underline;
+}
+
+#information .information-info .information-about-link .circle-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fecd55;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fecd55), color-stop(47%, #fcd780), color-stop(53%, #fcd780), to(#fecd55));
+  background: linear-gradient(to right, #fecd55 0%, #fcd780 47%, #fcd780 53%, #fecd55 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#information .information-info .information-about-link .circle-right .fa-chevron-circle-right {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
