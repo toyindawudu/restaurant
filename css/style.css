@@ -290,4 +290,101 @@
 #information .information-info .information-about-link .circle-right .fa-chevron-circle-right {
   color: white;
 }
+
+#food-preview {
+  background: #f4f8fb;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#food-preview .rounded-button {
+  border-radius: 20px;
+  background: green;
+  color: #ffffff;
+  display: inline-block;
+  height: auto;
+  width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#food-preview h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#food-preview .food-slider {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#food-preview .food-slider .slide {
+  position: relative;
+  height: 500px;
+  width: 20%;
+  border: solid 1px red;
+}
+
+#food-preview .food-slider .slide .background {
+  background: #c4c1c1;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#food-preview .food-slider .slide .content {
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#food-preview .food-slider .slide .content .food-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: green;
+}
+
+#food-preview .food-slider .slide .content .food-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+#food-preview .food-slider .slide .content .food-image img {
+  width: 95%;
+  max-width: 200px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,6 @@
     padding: 50px 30px;
     position: relative;
  
-
     .logo {
       display: flex;
       justify-content: center;
@@ -226,6 +225,93 @@
       .fa-chevron-circle-right {
         color: white;
       }
+    }
+  }
+}
+
+#food-preview {
+
+  background: #f4f8fb;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .rounded-button {
+    border-radius: 20px;
+    background: green;
+    color: #ffffff;
+    display: inline-block;
+    height: auto;
+    width: 100px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .food-slider {
+    width: 100%;
+    max-width: 1200px;
+    
+
+    .slide {
+      position: relative;
+      height: 500px;
+      width: 20%;
+      border: solid 1px red;
+      
+
+      .background{
+        background: rgb(196, 193, 193);
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      .content {
+        width: 100%;
+        padding: 20px;
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .food-title {
+          font-size: 2rem;
+          font-weight: 900;
+          margin-bottom: 2rem;
+          color: green;
+        }
+
+        .food-description {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          margin-bottom: 2rem;
+        }
+
+        .food-image {
+
+          img {
+            width: 95%;
+            max-width: 200px;
+          }
+          
+        }
+      }
+
     }
   }
 }
