@@ -173,11 +173,12 @@
   }
 
   .information-info h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 80px
   }
 
   .information-info .information-paragraphs {
@@ -244,9 +245,14 @@
     color: #ffffff;
     display: inline-block;
     height: auto;
-    width: 100px;
+    width: 150px;
     padding: 10px;
     margin-bottom: 120px;
+
+    .button-description {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
 
     &:hover {
       background: white;
