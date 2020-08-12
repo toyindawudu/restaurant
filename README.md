@@ -1,5 +1,8 @@
 // 
 
-Start - 7th of April
+This is a basic website for a restuarant showcasing the menu, contact details, social media as well as the daily specials.
 
-Creating a restarant website for a small business that only requires a brochure-type site that showcases their menu, location and images of their food if possible.
+This project consists mainly of HTML and SASS to style this project.
+
+I intend to use JavaScript to add some dynamic elements in the future 
+
